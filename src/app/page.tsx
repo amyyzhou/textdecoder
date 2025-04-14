@@ -36,7 +36,7 @@ export default function Home() {
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-bold text-pink-500">Text Decoder</h1>
           <p className="text-pink-400">
-            Decode the hidden meaning behind those mysterious text messages
+            A program that prevents my delusional girl friends from being delusional.
           </p>
         </div>
 
