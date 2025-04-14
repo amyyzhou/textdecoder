@@ -39,7 +39,7 @@ export default function Home() {
             A program that prevents my delusional girl friends from being delusional.
           </p>
           <p className="text-gray-500 text-sm">
-            brought to you by yours truly, amy zhou
+            brought to you by yours truly
             <br />
             <a 
               href="https://x.com/_amyyzhou" 
