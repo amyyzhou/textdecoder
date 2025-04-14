@@ -38,20 +38,20 @@ export default function GradientBackground({ children }: GradientBackgroundProps
       style={{
         background: `
           radial-gradient(circle 800px at ${mousePosition.x}% ${mousePosition.y}%, 
-            rgba(34, 211, 238, 0.15) 0%,
-            rgba(34, 211, 238, 0.05) 40%,
-            rgba(34, 211, 238, 0) 70%),
+            rgba(252, 231, 243, 0.7) 0%,
+            rgba(252, 231, 243, 0.3) 40%,
+            rgba(252, 231, 243, 0) 70%),
           radial-gradient(circle 600px at ${mousePosition.x}% ${mousePosition.y}%, 
-            rgba(168, 85, 247, ${isMoving ? 0.12 : 0.08}) 0%,
-            rgba(168, 85, 247, 0.04) 40%,
-            rgba(168, 85, 247, 0) 60%),
+            rgba(249, 168, 212, ${isMoving ? 0.15 : 0.1}) 0%,
+            rgba(249, 168, 212, 0.05) 40%,
+            rgba(249, 168, 212, 0) 60%),
           radial-gradient(circle 400px at ${mousePosition.x}% ${mousePosition.y}%, 
-            rgba(236, 72, 153, ${isMoving ? 0.15 : 0.1}) 0%,
-            rgba(236, 72, 153, 0.05) 30%,
-            rgba(236, 72, 153, 0) 50%),
+            rgba(244, 114, 182, ${isMoving ? 0.12 : 0.08}) 0%,
+            rgba(244, 114, 182, 0.04) 30%,
+            rgba(244, 114, 182, 0) 50%),
           linear-gradient(180deg, 
-            rgba(59, 130, 246, 0.05) 0%,
-            rgba(59, 130, 246, 0.02) 100%),
+            rgba(251, 207, 232, 0.1) 0%,
+            rgba(251, 207, 232, 0.05) 100%),
           white
         `,
         transition: isMoving ? 'none' : 'background 0.3s ease-out'
@@ -61,8 +61,8 @@ export default function GradientBackground({ children }: GradientBackgroundProps
         className="absolute inset-0"
         style={{
           background: `radial-gradient(circle 200px at ${mousePosition.x}% ${mousePosition.y}%, 
-            rgba(99, 102, 241, ${isMoving ? 0.15 : 0.1}) 0%,
-            rgba(99, 102, 241, 0) 100%)`,
+            rgba(236, 72, 153, ${isMoving ? 0.1 : 0.07}) 0%,
+            rgba(236, 72, 153, 0) 100%)`,
           transition: isMoving ? 'none' : 'background 0.2s ease-out'
         }}
       />
