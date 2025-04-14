@@ -1,24 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Text Decoder
 
-## Getting Started
+A modern web application that helps decode and analyze text messages using AI. Get insights into the meaning and intent behind messages!
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Clean, modern UI with a pink theme
+- Real-time text message analysis
+- Powered by OpenAI's GPT-3.5
+- Responsive design for mobile and desktop
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Copy `.env.example` to `.env.local` and add your OpenAI API key:
+   ```bash
+   cp .env.example .env.local
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
+
+This app can be deployed to Vercel in a few simple steps:
+
+1. Push your code to GitHub
+2. Visit [Vercel](https://vercel.com) and create a new project
+3. Import your GitHub repository
+4. Add your `OPENAI_API_KEY` to the Environment Variables section in Vercel
+5. Deploy!
+
+## Environment Variables
+
+- `OPENAI_API_KEY`: Your OpenAI API key (required)
 
 ## Learn More
 
