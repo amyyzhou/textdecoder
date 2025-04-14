@@ -38,6 +38,18 @@ export default function Home() {
           <p className="text-pink-400">
             A program that prevents my delusional girl friends from being delusional.
           </p>
+          <p className="text-gray-500 text-sm">
+            brought to you by yours truly, amy zhou
+            <br />
+            <a 
+              href="https://x.com/_amyyzhou" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-pink-400 hover:text-pink-500 transition-colors"
+            >
+              @_amyyzhou
+            </a>
+          </p>
         </div>
 
         <div className="space-y-4">
