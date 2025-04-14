@@ -22,7 +22,8 @@ export default function Home() {
       
       const data = await response.json();
       setAnalysis(data.analysis);
-    } catch (error) {
+    } catch (err) {
+      console.error('Error analyzing message:', err);
       setAnalysis('Sorry, something went wrong while analyzing the message.');
     } finally {
       setLoading(false);
