@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-neutral-200 font-normal`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased text-gray-800 font-normal`}
       >
         <GradientBackground>{children}</GradientBackground>
       </body>

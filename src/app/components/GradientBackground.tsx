@@ -34,24 +34,25 @@ export default function GradientBackground({ children }: GradientBackgroundProps
 
   return (
     <div
-      className="min-h-screen w-full relative overflow-hidden bg-slate-950"
+      className="min-h-screen w-full relative overflow-hidden bg-white"
       style={{
         background: `
           radial-gradient(circle 800px at ${mousePosition.x}% ${mousePosition.y}%, 
-            rgba(94, 234, 212, 0.08) 0%,
-            rgba(94, 234, 212, 0.03) 40%,
-            rgba(94, 234, 212, 0) 70%),
+            rgba(34, 211, 238, 0.15) 0%,
+            rgba(34, 211, 238, 0.05) 40%,
+            rgba(34, 211, 238, 0) 70%),
           radial-gradient(circle 600px at ${mousePosition.x}% ${mousePosition.y}%, 
-            rgba(192, 132, 252, ${isMoving ? 0.08 : 0.05}) 0%,
-            rgba(192, 132, 252, 0.02) 40%,
-            rgba(192, 132, 252, 0) 60%),
+            rgba(168, 85, 247, ${isMoving ? 0.12 : 0.08}) 0%,
+            rgba(168, 85, 247, 0.04) 40%,
+            rgba(168, 85, 247, 0) 60%),
           radial-gradient(circle 400px at ${mousePosition.x}% ${mousePosition.y}%, 
-            rgba(244, 114, 182, ${isMoving ? 0.12 : 0.08}) 0%,
-            rgba(244, 114, 182, 0.04) 30%,
-            rgba(244, 114, 182, 0) 50%),
+            rgba(236, 72, 153, ${isMoving ? 0.15 : 0.1}) 0%,
+            rgba(236, 72, 153, 0.05) 30%,
+            rgba(236, 72, 153, 0) 50%),
           linear-gradient(180deg, 
-            rgba(56, 189, 248, 0.03) 0%,
-            rgba(56, 189, 248, 0.01) 100%)
+            rgba(59, 130, 246, 0.05) 0%,
+            rgba(59, 130, 246, 0.02) 100%),
+          white
         `,
         transition: isMoving ? 'none' : 'background 0.3s ease-out'
       }}
@@ -60,8 +61,8 @@ export default function GradientBackground({ children }: GradientBackgroundProps
         className="absolute inset-0"
         style={{
           background: `radial-gradient(circle 200px at ${mousePosition.x}% ${mousePosition.y}%, 
-            rgba(255, 255, 255, ${isMoving ? 0.12 : 0.08}) 0%,
-            rgba(255, 255, 255, 0) 100%)`,
+            rgba(99, 102, 241, ${isMoving ? 0.15 : 0.1}) 0%,
+            rgba(99, 102, 241, 0) 100%)`,
           transition: isMoving ? 'none' : 'background 0.2s ease-out'
         }}
       />
